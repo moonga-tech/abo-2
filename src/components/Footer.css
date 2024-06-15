@@ -1,0 +1,169 @@
+.footer {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  padding: 2rem 0;
+}
+
+.footer h4 {
+  text-decoration: underline;
+}
+
+.footer .container {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.footer-row-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  max-width: 70px;
+  height: auto;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  color: gray;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  border-color: rgb(223, 43, 64);
+  color: rgb(223, 43, 64);
+}
+
+.social-icon i {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #333;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  flex-basis: calc(25% - 2rem);
+  padding: 0 1rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: rgb(223, 43, 64);
+  text-decoration: underline;
+}
+
+.mobile-app-icons img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-row-logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    max-width: 130px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-apps {
+    margin: 1.5rem 0;
+  }
+
+  .footer-social-icon {
+    margin: 0 0.5rem;
+  }
+
+  .footer-social-icon img {
+    border: 2px solid var(--white);
+    border-radius: 50%;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--gray);
+    padding: 2rem 0;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
